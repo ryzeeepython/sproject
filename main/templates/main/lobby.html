@@ -1,0 +1,90 @@
+{%load static%}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Mobile App Development, ​Stimulate your cognitive abilities while having fun, What We Do, Testimonials, Company Services, ​Love the way you work together?, Our Portfolio, About Us, ​Our way, Get in Touch, ​Level up your brand">
+    <meta name="description" content="">
+    <title>lobby</title>
+    <link rel="stylesheet" href="{%static 'main/css/main.css'%}" media="screen">
+    <link rel="stylesheet" href="{%static 'main/css/lobby.css'%}" media="screen">
+    <script class="u-script" type="text/javascript" src="{%static 'main/js/jquery.js'%}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{%static 'main/js/main.js'%}" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+
+    <meta name="theme-color" content="#a37fdf">
+    <meta property="og:title" content="lobby">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body style = "background-color: black;"data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="ru">
+    <header class="u-black u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-clearfix u-header u-header" id="sec-d402"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
+
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
+            </a>
+          </div>
+          <div class="u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><p style = "color: blueviolet">{{ request.user.first_name }}</p>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:index'%}">Главная</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:registration'%}">Регистрация</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:auth' %}">Войти</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:lobby' %}">Меню</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:page_1' %}">Пройти обучение</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:test' %}">Пройти тест</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'main:logout' %}">Выйти из аккаунта</a>
+                </li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <a href="{% url 'main:lobby'%}" class="u-image u-logo u-image-1" data-image-width="281" data-image-height="239">
+          <img src="{%static 'main/img/image1.png'%}" class="u-logo-image u-logo-image-1">
+        </a>
+
+      </div></header>
+    <section class="u-align-center u-clearfix u-palette-5-base u-section-1" id="carousel_d2df">
+      <h2 class="u-text u-text-default u-text-1">{{ request.user.first_name }}</h2>
+      <p class="u-text u-text-default-lg u-text-default-xl u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.&nbsp;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu . </p>
+      <div class="u-expanded-width u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-1">
+            <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+              <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="700" data-image-height="500" src="{%static 'main/img/11.png'%}">
+              <h4 class="u-text u-text-default u-text-palette-1-base u-text-3">К курсу</h4>
+              <p class="u-text u-text-4">Перейти к курсу</p>
+              <a href="{% url 'main:page_1'%}" class="u-active-palette-2-light-1 u-align-left u-btn u-btn-round u-button-style u-custom-font u-font-raleway u-hover-palette-2-light-1 u-palette-1-base u-radius-10 u-text-body-alt-color u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">НАЧАТЬ</a>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-2">
+            <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+              <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="512" data-image-height="512" src="{%static 'main/img/image-4.png'%}">
+              <h4 class="u-text u-text-default u-text-palette-1-base u-text-5">Получить сертификат</h4>
+              <p class="u-text u-text-6">Получить сертификат, после прохождения курса</p>
+              <a href="{% url 'main:show_res' %}" class="u-active-palette-2-light-1 u-align-left u-btn u-btn-round u-button-style u-custom-font u-font-raleway u-hover-palette-2-light-1 u-palette-1-base u-radius-10 u-text-body-alt-color u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">ПОЛУЧИТЬ</a>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-radius-10 u-repeater-item u-shape-round u-white u-list-item-3">
+            <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+              <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="512" data-image-height="512" src="{%static 'main/img/image-5.png'%}">
+              <h4 class="u-text u-text-default u-text-palette-1-base u-text-7">Выход</h4>
+              <p class="u-text u-text-8">Выйти из аккаунта</p>
+              <a href="{% url 'main:logout'%}" class="u-active-palette-2-light-1 u-align-left u-btn u-btn-round u-button-style u-custom-font u-font-raleway u-hover-palette-2-light-1 u-palette-1-base u-radius-10 u-text-body-alt-color u-btn-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">ВЫЙТИ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  
+</body></html>
