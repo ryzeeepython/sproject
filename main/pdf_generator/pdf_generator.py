@@ -6,14 +6,14 @@ class Main:
     def make_pdf(self,name, code): #генерирует сертификат в пнг
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         print(BASE_DIR)
-        image = Image.open(BASE_DIR + "\pdf_generator\A4.png")
+        image = Image.open(BASE_DIR + "/pdf_generator/A4.png")
         drawer = ImageDraw.Draw(image)
-        name_font = ImageFont.truetype(BASE_DIR + "\pdf_generator\Montserrat-Medium.ttf",47)
-        code_font = ImageFont.truetype(BASE_DIR + "\pdf_generator\Montserrat-Regular.ttf",15)
-        name_font_1 = ImageFont.truetype(BASE_DIR + "\pdf_generator\Montserrat-Medium.ttf",44)
-        name_font_2 = ImageFont.truetype(BASE_DIR + "\pdf_generator\Montserrat-Medium.ttf",39)
-        name_font_3 = ImageFont.truetype(BASE_DIR + "\pdf_generator\Montserrat-Medium.ttf",35)
-        name_font_4 = ImageFont.truetype(BASE_DIR + "\pdf_generator\Montserrat-Medium.ttf",32)
+        name_font = ImageFont.truetype(BASE_DIR + "/pdf_generator/Montserrat-Medium.ttf",47)
+        code_font = ImageFont.truetype(BASE_DIR + "/pdf_generator/Montserrat-Regular.ttf",15)
+        name_font_1 = ImageFont.truetype(BASE_DIR + "/pdf_generator/Montserrat-Medium.ttf",44)
+        name_font_2 = ImageFont.truetype(BASE_DIR + "/pdf_generator/Montserrat-Medium.ttf",39)
+        name_font_3 = ImageFont.truetype(BASE_DIR + "/pdf_generator/Montserrat-Medium.ttf",35)
+        name_font_4 = ImageFont.truetype(BASE_DIR + "/pdf_generator/Montserrat-Medium.ttf",32)
         
 
         if len(name) < 14:
