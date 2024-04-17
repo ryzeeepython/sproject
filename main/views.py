@@ -33,7 +33,7 @@ def auth(request):
                     return HttpResponse('Disabled account')
             else:
                 print('Access denied')
-                return render(request, 'main/login.html', {'form': form, 'access_denied': True})
+                return render(request, 'main/auth.html', {'form': form, 'access_denied': True})
         else: 
             print(form.errors)
     else:
